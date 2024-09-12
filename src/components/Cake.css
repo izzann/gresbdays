@@ -1,0 +1,39 @@
+/* src/components/Cake.css */
+.cake {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.segment {
+  display: flex;
+  align-items: flex-end;
+}
+
+.segment.left,
+.segment.right {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 70px; /* Menambahkan jarak antar segmen kecil */
+}
+
+.small-segment {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.left {
+  margin-left: 20px;
+}
+
+.center {
+  margin: 0 20px;
+}
+
+.right {
+  margin-right: 20px;
+}

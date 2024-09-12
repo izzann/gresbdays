@@ -1,0 +1,113 @@
+.solar-system {
+  width: 100vw;
+  height: 100vh;
+  background: #000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.orbit {
+  height: 312px;
+  width: 312px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+}
+
+.earth {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background:url(https://cdn.rawgit.com/ManzDev/cursos-assets/gh-pages/css3/earth-2.jpg);
+  background-size:cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform:rotateX(6deg) rotateY(6deg) rotateZ(6deg);
+  animation: movimiento 5s linear;
+  animation: orbit 5s linear 2 forwards;
+  cursor: pointer;
+}
+
+.earth.animation-complete {
+  animation: none;
+  transform: translate(150px, 0); /* Position at 3 o'clock */
+}
+
+.sun {
+  display: block;
+  background-color: rgb(255, 225, 0);
+  box-shadow: 0 0 45px 5px rgb(255, 136, 0),0 0 30px 10px #ED5C4E inset ;
+  border-radius: 50%;
+  height: 145px;
+  width: 145px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.moon {
+  height: 6.5px;
+  width: 6.5px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 2px 2px, #f0f0f0, #808080);
+  position: absolute;
+  animation: moon-rotate 5s linear infinite;
+  top: 1%;
+  left: 120%;
+  transform: translate(-50%, -50%);
+}
+
+.date-indicator {
+  position: absolute;
+  top: 51%;
+  right: 25%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.date-indicator.show {
+  opacity: 1;
+}
+
+.arrow {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 20px solid white;
+  margin-right: 10px;
+}
+
+@keyframes orbit {
+  from {
+    transform: rotate(0deg) translateX(150px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(150px) rotate(-360deg);
+  }
+}
+
+@keyframes movimiento {
+  0% { background-position:0 0 }
+  100% { background-position:355px 0 }
+}
+
+@keyframes moon-rotate {
+  from {
+    transform: rotate(0deg) translateX(30px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(30px) rotate(-360deg);
+  }
+}
