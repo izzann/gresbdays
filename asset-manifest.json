@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/repository-name/static/css/main.d9079ec5.css",
+    "main.js": "/repository-name/static/js/main.5d4b1317.js",
+    "static/js/453.4a6228e5.chunk.js": "/repository-name/static/js/453.4a6228e5.chunk.js",
+    "static/media/gres2.jpg": "/repository-name/static/media/gres2.42aec9fe91344d7064bb.jpg",
+    "static/media/gres3.jpg": "/repository-name/static/media/gres3.fce842ca4ba1540800d8.jpg",
+    "static/media/gres1.jpg": "/repository-name/static/media/gres1.300184edc21989158005.jpg",
+    "index.html": "/repository-name/index.html",
+    "main.d9079ec5.css.map": "/repository-name/static/css/main.d9079ec5.css.map",
+    "main.5d4b1317.js.map": "/repository-name/static/js/main.5d4b1317.js.map",
+    "453.4a6228e5.chunk.js.map": "/repository-name/static/js/453.4a6228e5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d9079ec5.css",
+    "static/js/main.5d4b1317.js"
+  ]
+}
